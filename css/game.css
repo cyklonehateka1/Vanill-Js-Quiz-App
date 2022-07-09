@@ -61,6 +61,13 @@
   background-color: red;
 }
 
+#question {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-break: 0px;
+  color: white;
+}
+
 /* Heads Up Display (HUD) */
 #hud {
   display: flex;
@@ -74,13 +81,23 @@
 
 .hud-main-text {
   text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 2rem;
 }
 
 #progressBar {
   width: 22rem;
   height: 2.5rem;
-  border: 2px solid rgb(216, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
   border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  width: 0;
+  height: 100%;
+  background-color: red;
 }
 
 @media screen and (max-width: 480px) {
