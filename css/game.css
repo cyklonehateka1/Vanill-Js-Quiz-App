@@ -1,5 +1,5 @@
 :root {
-  background-color: aqua;
+  background-color: rgb(131, 255, 255);
 }
 
 * {
@@ -15,25 +15,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 20rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #game {
-  justify-content: center;
-  flex-direction: column;
+  background-color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(100, 100, 100);
 }
 
 .choice-container {
   display: flex;
   margin-bottom: 0.8rem;
-  width: 100%;
+  width: 600px;
   border-radius: 5px;
   background-color: rgb(89, 0, 255);
-  font-size: 2.5rem;
-  min-width: 600px;
+  color: white;
+  font-size: 20px;
 }
 
 .choice-container:hover {
@@ -44,13 +48,12 @@
 }
 
 .choice-prefix {
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   color: white;
 }
 
 .choice-text {
   padding: 1rem;
-  width: 100%;
 }
 
 .correct {
@@ -62,16 +65,17 @@
 }
 
 #question {
-  font-size: 30px;
+  font-size: 23px;
   margin-bottom: 20px;
-  line-break: 0px;
-  color: white;
+  width: 600px;
 }
 
 /* Heads Up Display (HUD) */
 #hud {
   display: flex;
+  width: 600px;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .hud-prefix {
@@ -82,13 +86,12 @@
 .hud-main-text {
   text-align: center;
   font-size: 4rem;
-  color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #progressBar {
-  width: 22rem;
-  height: 2.5rem;
+  width: 250px;
+  height: 1.5rem;
   border: 2px solid rgb(255, 0, 0);
   border-radius: 50px;
   overflow: hidden;
@@ -98,16 +101,4 @@
   width: 0;
   height: 100%;
   background-color: red;
-}
-
-@media screen and (max-width: 480px) {
-  .choice-container {
-    min-height: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .choice-container {
-    min-height: 450px;
-  }
 }
