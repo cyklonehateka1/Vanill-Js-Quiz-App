@@ -110,3 +110,81 @@ a img {
 i {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  #end {
+    padding: 10px 10px;
+    width: 280px;
+  }
+  .btn {
+    font-size: 10px;
+    width: 250px;
+    position: relative;
+    left: 0;
+  }
+
+  .container {
+    padding: 10rem 10px;
+  }
+
+  .fas {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .end-form-contaner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    margin-bottom: 1.7rem;
+    padding: 0.3rem;
+    width: 250px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 0.4rem 1rem 0 rgb(78, 78, 78);
+    font-size: 1rem;
+    position: relative;
+    left: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a img {
+    width: 15px;
+    margin-left: 5px;
+  }
+
+  i {
+    margin-left: 5px;
+  }
+
+  #finalScore {
+    font-weight: 400;
+    position: relative;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    left: 0;
+  }
+
+  #end-text {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    width: 250px;
+  }
+}
