@@ -56,3 +56,35 @@ h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 480px) {
+  .home-cont {
+    padding: 10px 10px;
+  }
+  .btn {
+    font-size: 15px;
+    width: 250px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  #highScoresList {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .high-score {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
